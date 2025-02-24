@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import "tailwindcss";
+@tailwind utilities;
+
+
+* {
+  font-family: "Roboto Slab", serif;
+  
+}
+
+@layer utilities {
+  .xl-layout {
+    @apply xl:flex xl:justify-between xl:items-center xl:p-5;
+  }
+  .lg-layout {
+    @apply lg:flex lg:justify-between lg:items-center lg:p-5;
+  }
+ 
+}
+
+/*
+"https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc"
+
+`Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNmY4MjdlNTliZmQxMzMwM2ZkYjMyOTJlYjBjNTgzZiIsIm5iZiI6MTczODM1NzkwNy42NjIwMDAyLCJzdWIiOiI2NzlkM2M5M2E1NzkwOTcwMWFjYjI4YWMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.MSv4MacIr1PHpP52N6S181V2FKgt8M8hFETUvV9-3SA`
+
+https://image.tmdb.org/t/p/w400/
